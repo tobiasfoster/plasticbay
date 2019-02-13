@@ -1,0 +1,114 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #90dae7, #dd54af);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 15vh;
+    align-items: center;
+    font-size: 1.5em;
+
+}
+
+#header-container > p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#header-container:first-child {
+    margin-right: auto;
+}
+
+#search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+#search-box input {
+    text-align: center;
+    border-color: peru;
+    font-size: 1.2em;
+    border-top: transparent;
+    border-right:transparent;
+    border-left: transparent;
+}
+
+#search-box input:focus {
+    border-bottom-color: #90dae7;
+}
+
+
+#intro {
+    padding-top: 10px;
+    width: 100wh;
+	/* height: 90vh; */
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+    justify-items: center;
+    text-align: center;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+#intro img {
+    border-radius: 50%;
+}
+
+#intro img:hover {
+    transition: 1.5s ease;
+    transform: scale(1.1, 1.1);
+}
+
